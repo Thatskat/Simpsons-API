@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Simpsons Quote Search</title>
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="./style/desktop.css">
+  <!-- JS SCRIPTS-->
+  <script src="./js/simpsons.js" defer></script>
+  <script src="./js/slideshow.js" defer></script>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/x-icon "href="./logo/Simpsons-API-logo.png">
+</head>
+<body>
+  <!-- NAVBAR START -->
+  <nav class="navbar">
+    <a class="nav-logo" href="./index.html"><img src="./logo/Simpsons-API-logo.png" alt="Simpsons Search Logo"></a>
+    <div class="navlink">
+      <a href="./index.html" class="current">Home</a>
+      <a href="#">Simpsons Characters</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- HEADER INDEX SLIDESHOW/SEARCH START -->
+  <section class="slideShow-container">
+    <div class="mySlides slide-one">
+      <h1>Simpsons Search</h1>
+      <p>Type in a Simpsons character name to get a fun quote</p>
+    <input type="text" name="simpsons-search" id="simpsons-search" placeholder="Enter Simpson Character Here">
+    <button id="search-btn">Search</button>
+    <p>Stuck? Here's a <a href="./simpsonscharacters.html">Link</a> to all of the Simpsons Characters</p>
+    </div>
+    <div class="mySlides slide-two">
+      <h1>Simpsons Search</h1>
+      <p>Type in a Simpsons character name to get a fun quote</p>
+      <input type="text" name="simpsons-search" id="simpsons-search-pink" placeholder="Enter Simpson Character Here">
+      <button id="search-btn-pink">Search</button>
+      <p>Stuck? Here's a <a href="./simpsonscharacters.html">Link</a> to all of the Simpsons Characters</p>
+    </div>
+  </section>
+  <!-- HEADER INDEX SLIDESHOW END -->
+
+  <!-- ERROR MESSAGE START-->
+  <section class="error" id="error-message">
+    <h2>D'oh!</h2>
+    <p>Something has gone horribly wrong - Please try again</p>
+  </section>
+  <!-- ERROR MESSAGE END -->
+
+  <!-- QUOTE RESULTS START -->
+  <section class="quote-results" id="quote-results">
+    <h2 id="quote-input"></h2>
+    <h3 id="quote-by">An insightful quote by </h3>
+    <img src="" alt="" id="quote-img">
+  </section>
+<!-- QUOTE RESULTS END -->
+
+<!-- FOOTER START -->
+<footer class="main-footer">
+<p id="top-info-footer">This has been Simpsons Search</p>
+<p>The Simpsons Quote API was made and coded by Jason Luboff</p>
+<p>The API can be found <a href="https://thesimpsonsquoteapi.glitch.me/" target="_blank">Here</a></p>
+</footer>
+<!-- FOOTER END -->
+</body>
+</html>
